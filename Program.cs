@@ -1,15 +1,5 @@
-﻿ContaBancaria conta1 = new ContaBancaria();
+﻿Titular titularConta = new Titular("Arthur", "Klober","12346789100","Rua do Príncipe 123",25);
 
-Titular titularConta = new Titular();
-titularConta.Nome = "Arthur";
-titularConta.Sobrenome = "Klober";
-titularConta.Idade = 25;
-
-conta1.Id = 356021;
-conta1.Agencia = 2634;
-conta1.Saldo = 3500;
-conta1.Senha = 12345;
-conta1.Limite = 5000;
-conta1.Titular = titularConta;
+ContaBancaria conta1 = new ContaBancaria(356021, titularConta, 3500, 2634, 5000);
 
 conta1.ExibirInformacoesConta();
